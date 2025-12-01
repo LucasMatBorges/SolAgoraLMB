@@ -1,0 +1,44 @@
+🚀 Desafio Técnico: Engenharia de Dados
+
+🎯 Objetivo
+Projetar e implementar um pipeline de dados que realize a ingestão, o processamento e o armazenamento de informações de forma escalável, aplicando boas práticas de engenharia de dados.
+
+💻 Descrição do Desafio
+Uma fintech deseja analisar diariamente um grande volume de dados de transações recebidos em formato CSV, armazenados em um bucket de uma conta AWS externa (com acesso autorizado). O objetivo é construir uma solução que realize as seguintes etapas na nuvem da AWS:
+
+Ingestão: Coleta dos arquivos CSV armazenados em um bucket de outra conta AWS.
+
+Processamento: Tratamento e limpeza dos dados brutos.
+
+Enriquecimento: Inclusão de informações complementares que agreguem valor aos dados.
+
+Armazenamento: Persistência dos dados processados em um repositório escalável e de fácil consulta.
+
+Consulta: Disponibilização dos dados para análise por ferramentas de BI ou consultas SQL.
+
+📦 Dados de Exemplo
+Será fornecida uma amostra de arquivos CSV com o seguinte esquema:
+
+Table countries
+"country_code",
+"country"
+
+Table transactions
+"country_code",
+"transaction_date",
+"bank",
+"company",
+"transaction_id",
+"transaction_value",
+"payment_due_date"
+
+📄 Entregáveis
+Pasta com o código-fonte do projeto.
+
+Uma única tabela final é necessária para responder a perguntas comerciais como:
+países com mais transações, bancos com mais transações, datas com mais transações, pagamentos de transações mais atrasados, etc.
+
+Qualquer material adicional que você considerar relevante para ajudar a entender melhor a sua proposta (por exemplo, README, diagrama da arquitetura, instruções de execução etc.).
+
+ℹ️ Observação
+A implementação da solução você pode desenvolver o projeto localmente e, explicar como ele poderia ser adaptado ou implantado em um ambiente na nuvem.
