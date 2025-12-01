@@ -150,6 +150,15 @@ LIMIT 50;
 .
 ├── README.md
 │
+├── s3/
+│  ├─ bronze/
+│  │    ├─ countries/
+│  │    │     └─ countries.csv
+│  │    └─ transactions/
+│  │          └─ transactions_*.csv
+│  │
+│  └─ gold/
+│       └─ transactions_country/
 ├── src/
 │    └── glue/
 │          └── transactions_etl.py
